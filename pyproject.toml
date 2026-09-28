@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daas-cc"
+version = "0.1.0"
+description = "Reference implementation of a Determinism-as-a-Service Centralized Controller"
+requires-python = ">=3.9"
+dependencies = [
+    "pydantic>=2.7",
+    "networkx>=3.2",
+    "python-dotenv>=1.0",
+    "fastapi>=0.111",
+    "uvicorn>=0.29",
+]
+
+[project.optional-dependencies]
+api = [
+    "fastapi>=0.111",
+    "uvicorn>=0.29",
+]
+test = [
+    "pytest>=8.0",
+]
+
+[tool.setuptools.packages.find]
+where = [""]
+include = ["daas_cc*"]

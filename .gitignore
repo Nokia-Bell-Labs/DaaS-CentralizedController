@@ -1,0 +1,194 @@
+# Throwaway scripts dropped in the repository root.
+# Patterns are anchored so tests/test_*.py stays tracked.
+/test_*.py
+/verify_*.py
+/check_*.py
+/debug_*.py
+/diagnose_*.py
+/force_*.py
+/complete_*.py
+/simple_*.py
+/analyze_*.py
+/*_debug.py
+/*_test.py
+vlan_matching_debug.log
+*_output.txt
+*_check.txt
+*_result.txt
+*_summary.txt
+generation_output.txt
+git_*.txt
+*.backup
+*.bak
+.DS_Store
+
+# Test and temporary directories
+state/
+test_state/
+test_ras_output/
+v4 to v5 updates/
+
+# Generated scheduler files
+pss-output/
+
+# Intermediate documentation
+*_INSTRUCTIONS.md
+*_QUICK_REF.md
+*_CHECKLIST.md
+*_STATUS.md
+*_ANALYSIS.md
+*_APPLIED.md
+*BEFORE_AFTER*.md
+*FIX_BUNDLE*.md
+*FIX_INITIAL*.md
+*FIX_422*.md
+PATH_REDUCTION*.md
+FUNCTION_REWRITE*.md
+INGRESS_LINKS*.md
+LINKS_LIST*.md
+ACTUAL_FIX*.md
+ALL_FIXES*.md
+CLEANUP_*.md
+CLEANUP_*.txt
+READY_TO_PUSH.md
+push_to_origin.ps1
+show_git_status.ps1
+cleanup_git_files.ps1
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff
+instance/
+.webassets-cache
+
+# Scrapy stuff
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# PEP 582 (optional)
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# dotenv
+.env
+.env.*
+
+# virtualenvs
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+bin/
+pyvenv.cfg
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.ropeproject
+
+# mkdocs
+/site
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# PyCharm
+.idea/
+*.iml
+
+.dirstamp
+/daas_cc/docs/
+/daas_cc/bin/

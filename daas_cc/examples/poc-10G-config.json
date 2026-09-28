@@ -1,0 +1,35 @@
+{
+  "use_case": "poc-10G",
+  "description": "10 Gbps example used for the multicast results. Unrouted flow requests are read from a .ufl file. Switch among rdmf-010G-p960a-P1472-mc00.ufl, mc20, mc40, mc60, and mc80 by changing pre_unrouted_flows_file. PSS output is written to pss_output_dir. Unicast VLAN ids come from the topology paths table. Multicast VLAN ids come from multicast_vlan_mapping.json.",
+
+  "topology_file": "poc-10G-topo.json",
+  "multicast_vlan_mapping_file": "multicast_vlan_mapping.json",
+  "pre_routed_flows_file": "rdmf-010G-p960a-P1472-mc80.rfl",
+  "pre_unrouted_flows_file": null,
+  "state_dir": "state",
+  "pss_output_dir": "pss-output",
+
+  "deterministic_capacity_fraction": 1.0,
+
+  "slot_duration_s": 1.28e-6,
+  "pss_link_rate": 10000,
+  "pss_rate_granularity": 1,
+
+  "push_pss_on_startup": true,
+
+  "flow_routing_progress_interval_s": 5.0,
+
+  "scheduling_policy": "flat",
+  "cost_policy": "congestion_cost",
+  "reference_unit_cost": 1.0,
+
+  "routing_policy": "largest_residual_bandwidth_minimum_tree",
+  "routing_max_path_num": 8,
+  "routing_max_hop_num": 4,
+  "routing_max_latency_num_us": 1000000.0,
+
+  "admission_mode": "exact",
+  "bandwidth_overhead": 0,
+  "conservative_cac_max_path_hops": 4,
+  "conservative_cac_max_link_latency_s": 1.0e-5
+}
