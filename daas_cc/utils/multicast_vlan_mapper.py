@@ -1,3 +1,8 @@
+#
+#                © 2026 Nokia
+#                Licensed under the BSD 3-Clause Clear License
+#                SPDX-License-Identifier: BSD-3-Clause-Clear
+#
 """
 Map a multicast path in IIE form to the VLAN id configured for that tree.
 

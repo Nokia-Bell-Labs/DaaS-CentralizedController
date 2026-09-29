@@ -1,3 +1,8 @@
+#
+#                © 2026 Nokia
+#                Licensed under the BSD 3-Clause Clear License
+#                SPDX-License-Identifier: BSD-3-Clause-Clear
+#
 """Checks for the open-source flow-list and local PSS-file path."""
 from __future__ import annotations
 

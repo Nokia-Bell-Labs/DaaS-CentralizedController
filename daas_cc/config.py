@@ -1,3 +1,8 @@
+#
+#                © 2026 Nokia
+#                Licensed under the BSD 3-Clause Clear License
+#                SPDX-License-Identifier: BSD-3-Clause-Clear
+#
 from pydantic import BaseModel, Field
 from typing import Literal, Optional
 from pathlib import Path

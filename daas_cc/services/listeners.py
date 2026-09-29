@@ -1,3 +1,8 @@
+#
+#                © 2026 Nokia
+#                Licensed under the BSD 3-Clause Clear License
+#                SPDX-License-Identifier: BSD-3-Clause-Clear
+#
 from __future__ import annotations
 from fastapi import FastAPI, HTTPException, Query, Request
 from contextlib import asynccontextmanager

@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+#
+#                © 2026 Nokia
+#                Licensed under the BSD 3-Clause Clear License
+#                SPDX-License-Identifier: BSD-3-Clause-Clear
+#
 # Start the controller with the existing virtual environment.
 # Install dependencies first with ./check_dependencies.sh.
 # Extra arguments are passed to start_server.py, for example:

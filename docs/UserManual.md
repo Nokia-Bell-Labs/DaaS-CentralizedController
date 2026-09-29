@@ -50,6 +50,8 @@ All three routing policies keep only paths within `routing_max_hop_num` hops and
 
 ### 3.1 Routing
 
+In the data-center example included with this repository, the code base assumes that network routes are identified by VLAN IDs. Applying the solution to a network where the routes of deterministic flows are identified by different means, for example MPLS labels, requires expanding the code base to support that method.
+
 Routing applies to unrouted requests (a `.ufl` file or `POST /flows/add`). A `.rfl` file already names the path, so these policies are not used for those flows.
 
 | Policy | What it does |

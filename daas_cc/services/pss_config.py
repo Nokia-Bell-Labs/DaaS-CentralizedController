@@ -1,3 +1,8 @@
+#
+#                © 2026 Nokia
+#                Licensed under the BSD 3-Clause Clear License
+#                SPDX-License-Identifier: BSD-3-Clause-Clear
+#
 """Write the RAS shaper files that the controller used to send to a remote host.
 
 Each ingress profile becomes a pair of files in one local directory:

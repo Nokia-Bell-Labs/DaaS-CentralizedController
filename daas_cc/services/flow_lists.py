@@ -1,3 +1,8 @@
+#
+#                © 2026 Nokia
+#                Licensed under the BSD 3-Clause Clear License
+#                SPDX-License-Identifier: BSD-3-Clause-Clear
+#
 """Load hand-written flow lists into the dictionaries the controller already admits.
 
 .ufl files describe unrouted requests (the controller chooses the path).

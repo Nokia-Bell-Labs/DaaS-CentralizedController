@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+#
+#                © 2026 Nokia
+#                Licensed under the BSD 3-Clause Clear License
+#                SPDX-License-Identifier: BSD-3-Clause-Clear
+#
 # Create .venv if needed and install the controller dependencies.
 # Run this once, and again after pyproject.toml changes. Starting the
 # controller does not install anything.
