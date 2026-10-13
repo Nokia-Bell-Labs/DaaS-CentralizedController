@@ -1,0 +1,704 @@
+{
+  "nodes": [
+    {
+      "id": "u01l01",
+      "kind": "endpoint",
+      "ip_address": "10.1.7.2",
+      "attrs": {}
+    },
+    {
+      "id": "u02l01",
+      "kind": "endpoint",
+      "ip_address": "10.1.11.2",
+      "attrs": {}
+    },
+    {
+      "id": "u01l02",
+      "kind": "endpoint",
+      "ip_address": "10.2.8.2",
+      "attrs": {}
+    },
+    {
+      "id": "u02l02",
+      "kind": "endpoint",
+      "ip_address": "10.2.12.2",
+      "attrs": {}
+    },
+    {
+      "id": "u01l03",
+      "kind": "endpoint",
+      "ip_address": "10.3.9.2",
+      "attrs": {}
+    },
+    {
+      "id": "u02l03",
+      "kind": "endpoint",
+      "ip_address": "10.3.13.2",
+      "attrs": {}
+    },
+    {
+      "id": "u01l04",
+      "kind": "endpoint",
+      "ip_address": "10.4.10.2",
+      "attrs": {}
+    },
+    {
+      "id": "u02l04",
+      "kind": "endpoint",
+      "ip_address": "10.4.14.2",
+      "attrs": {}
+    },
+    {
+      "id": "lf01",
+      "kind": "switch",
+      "attrs": {}
+    },
+    {
+      "id": "lf02",
+      "kind": "switch",
+      "attrs": {}
+    },
+    {
+      "id": "lf03",
+      "kind": "switch",
+      "attrs": {}
+    },
+    {
+      "id": "lf04",
+      "kind": "switch",
+      "attrs": {}
+    },
+    {
+      "id": "sp01",
+      "kind": "switch",
+      "attrs": {}
+    },
+    {
+      "id": "sp02",
+      "kind": "switch",
+      "attrs": {}
+    }
+  ],
+  "links": [
+    {
+      "id": "u01l01_l01",
+      "src": "u01l01",
+      "dst": "lf01",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l01_u01l01",
+      "src": "lf01",
+      "dst": "u01l01",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "u02l01_l01",
+      "src": "u02l01",
+      "dst": "lf01",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l01_u02l01",
+      "src": "lf01",
+      "dst": "u02l01",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "u01l02_l02",
+      "src": "u01l02",
+      "dst": "lf02",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l02_u01l02",
+      "src": "lf02",
+      "dst": "u01l02",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "u02l02_l02",
+      "src": "u02l02",
+      "dst": "lf02",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l02_u02l02",
+      "src": "lf02",
+      "dst": "u02l02",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "u01l03_l03",
+      "src": "u01l03",
+      "dst": "lf03",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l03_u01l03",
+      "src": "lf03",
+      "dst": "u01l03",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "u02l03_l03",
+      "src": "u02l03",
+      "dst": "lf03",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l03_u02l03",
+      "src": "lf03",
+      "dst": "u02l03",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "u01l04_l04",
+      "src": "u01l04",
+      "dst": "lf04",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l04_u01l04",
+      "src": "lf04",
+      "dst": "u01l04",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "u02l04_l04",
+      "src": "u02l04",
+      "dst": "lf04",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l04_u02l04",
+      "src": "lf04",
+      "dst": "u02l04",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l01_s01",
+      "src": "lf01",
+      "dst": "sp01",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "s01_l01",
+      "src": "sp01",
+      "dst": "lf01",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l01_s02",
+      "src": "lf01",
+      "dst": "sp02",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "s02_l01",
+      "src": "sp02",
+      "dst": "lf01",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l02_s01",
+      "src": "lf02",
+      "dst": "sp01",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "s01_l02",
+      "src": "sp01",
+      "dst": "lf02",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l02_s02",
+      "src": "lf02",
+      "dst": "sp02",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "s02_l02",
+      "src": "sp02",
+      "dst": "lf02",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l03_s01",
+      "src": "lf03",
+      "dst": "sp01",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "s01_l03",
+      "src": "sp01",
+      "dst": "lf03",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l03_s02",
+      "src": "lf03",
+      "dst": "sp02",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "s02_l03",
+      "src": "sp02",
+      "dst": "lf03",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l04_s01",
+      "src": "lf04",
+      "dst": "sp01",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "s01_l04",
+      "src": "sp01",
+      "dst": "lf04",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "l04_s02",
+      "src": "lf04",
+      "dst": "sp02",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    },
+    {
+      "id": "s02_l04",
+      "src": "sp02",
+      "dst": "lf04",
+      "capacity_Mbps": 10000,
+      "prop_latency_s": 1e-06
+    }
+  ],
+  "ingress_links": [
+    "u01l01_l01",
+    "u02l01_l01",
+    "u01l02_l02",
+    "u02l02_l02",
+    "u01l03_l03",
+    "u02l03_l03",
+    "u01l04_l04",
+    "u02l04_l04"
+  ],
+  "paths": [
+    {
+      "id": "u01l01_l01^l01_s01-s01_l02^l02_u01l02",
+      "vlan_id": "0x1"
+    },
+    {
+      "id": "u01l01_l01^l01_s02-s02_l02^l02_u01l02",
+      "vlan_id": "0x2"
+    },
+    {
+      "id": "u01l01_l01^l01_s01-s01_l03^l03_u01l03",
+      "vlan_id": "0x3"
+    },
+    {
+      "id": "u01l01_l01^l01_s02-s02_l03^l03_u01l03",
+      "vlan_id": "0x4"
+    },
+    {
+      "id": "u01l01_l01^l01_s01-s01_l04^l04_u01l04",
+      "vlan_id": "0x5"
+    },
+    {
+      "id": "u01l01_l01^l01_s02-s02_l04^l04_u01l04",
+      "vlan_id": "0x6"
+    },
+    {
+      "id": "u01l01_l01^l01_s01-s01_l02^l02_u02l02",
+      "vlan_id": "0x1"
+    },
+    {
+      "id": "u01l01_l01^l01_s02-s02_l02^l02_u02l02",
+      "vlan_id": "0x2"
+    },
+    {
+      "id": "u01l01_l01^l01_s01-s01_l03^l03_u02l03",
+      "vlan_id": "0x3"
+    },
+    {
+      "id": "u01l01_l01^l01_s02-s02_l03^l03_u02l03",
+      "vlan_id": "0x4"
+    },
+    {
+      "id": "u01l01_l01^l01_s01-s01_l04^l04_u02l04",
+      "vlan_id": "0x5"
+    },
+    {
+      "id": "u01l01_l01^l01_s02-s02_l04^l04_u02l04",
+      "vlan_id": "0x6"
+    },
+    {
+      "id": "u02l01_l01^l01_s01-s01_l02^l02_u01l02",
+      "vlan_id": "0x1"
+    },
+    {
+      "id": "u02l01_l01^l01_s02-s02_l02^l02_u01l02",
+      "vlan_id": "0x2"
+    },
+    {
+      "id": "u02l01_l01^l01_s01-s01_l03^l03_u01l03",
+      "vlan_id": "0x3"
+    },
+    {
+      "id": "u02l01_l01^l01_s02-s02_l03^l03_u01l03",
+      "vlan_id": "0x4"
+    },
+    {
+      "id": "u02l01_l01^l01_s01-s01_l04^l04_u01l04",
+      "vlan_id": "0x5"
+    },
+    {
+      "id": "u02l01_l01^l01_s02-s02_l04^l04_u01l04",
+      "vlan_id": "0x6"
+    },
+    {
+      "id": "u02l01_l01^l01_s01-s01_l02^l02_u02l02",
+      "vlan_id": "0x1"
+    },
+    {
+      "id": "u02l01_l01^l01_s02-s02_l02^l02_u02l02",
+      "vlan_id": "0x2"
+    },
+    {
+      "id": "u02l01_l01^l01_s01-s01_l03^l03_u02l03",
+      "vlan_id": "0x3"
+    },
+    {
+      "id": "u02l01_l01^l01_s02-s02_l03^l03_u02l03",
+      "vlan_id": "0x4"
+    },
+    {
+      "id": "u02l01_l01^l01_s01-s01_l04^l04_u02l04",
+      "vlan_id": "0x5"
+    },
+    {
+      "id": "u02l01_l01^l01_s02-s02_l04^l04_u02l04",
+      "vlan_id": "0x6"
+    },
+    {
+      "id": "u01l02_l02^l02_s01-s01_l01^l01_u01l01",
+      "vlan_id": "0x7"
+    },
+    {
+      "id": "u01l02_l02^l02_s02-s02_l01^l01_u01l01",
+      "vlan_id": "0x8"
+    },
+    {
+      "id": "u01l02_l02^l02_s01-s01_l03^l03_u01l03",
+      "vlan_id": "0x9"
+    },
+    {
+      "id": "u01l02_l02^l02_s02-s02_l03^l03_u01l03",
+      "vlan_id": "0xa"
+    },
+    {
+      "id": "u01l02_l02^l02_s01-s01_l04^l04_u01l04",
+      "vlan_id": "0xb"
+    },
+    {
+      "id": "u01l02_l02^l02_s02-s02_l04^l04_u01l04",
+      "vlan_id": "0xc"
+    },
+    {
+      "id": "u01l02_l02^l02_s01-s01_l01^l01_u02l01",
+      "vlan_id": "0x7"
+    },
+    {
+      "id": "u01l02_l02^l02_s02-s02_l01^l01_u02l01",
+      "vlan_id": "0x8"
+    },
+    {
+      "id": "u01l02_l02^l02_s01-s01_l03^l03_u02l03",
+      "vlan_id": "0x9"
+    },
+    {
+      "id": "u01l02_l02^l02_s02-s02_l03^l03_u02l03",
+      "vlan_id": "0xa"
+    },
+    {
+      "id": "u01l02_l02^l02_s01-s01_l04^l04_u02l04",
+      "vlan_id": "0xb"
+    },
+    {
+      "id": "u01l02_l02^l02_s02-s02_l04^l04_u02l04",
+      "vlan_id": "0xc"
+    },
+    {
+      "id": "u02l02_l02^l02_s01-s01_l01^l01_u01l01",
+      "vlan_id": "0x7"
+    },
+    {
+      "id": "u02l02_l02^l02_s02-s02_l01^l01_u01l01",
+      "vlan_id": "0x8"
+    },
+    {
+      "id": "u02l02_l02^l02_s01-s01_l03^l03_u01l03",
+      "vlan_id": "0x9"
+    },
+    {
+      "id": "u02l02_l02^l02_s02-s02_l03^l03_u01l03",
+      "vlan_id": "0xa"
+    },
+    {
+      "id": "u02l02_l02^l02_s01-s01_l04^l04_u01l04",
+      "vlan_id": "0xb"
+    },
+    {
+      "id": "u02l02_l02^l02_s02-s02_l04^l04_u01l04",
+      "vlan_id": "0xc"
+    },
+    {
+      "id": "u02l02_l02^l02_s01-s01_l01^l01_u02l01",
+      "vlan_id": "0x7"
+    },
+    {
+      "id": "u02l02_l02^l02_s02-s02_l01^l01_u02l01",
+      "vlan_id": "0x8"
+    },
+    {
+      "id": "u02l02_l02^l02_s01-s01_l03^l03_u02l03",
+      "vlan_id": "0x9"
+    },
+    {
+      "id": "u02l02_l02^l02_s02-s02_l03^l03_u02l03",
+      "vlan_id": "0xa"
+    },
+    {
+      "id": "u02l02_l02^l02_s01-s01_l04^l04_u02l04",
+      "vlan_id": "0xb"
+    },
+    {
+      "id": "u02l02_l02^l02_s02-s02_l04^l04_u02l04",
+      "vlan_id": "0xc"
+    },
+    {
+      "id": "u01l03_l03^l03_s01-s01_l01^l01_u01l01",
+      "vlan_id": "0xd"
+    },
+    {
+      "id": "u01l03_l03^l03_s02-s02_l01^l01_u01l01",
+      "vlan_id": "0xe"
+    },
+    {
+      "id": "u01l03_l03^l03_s01-s01_l02^l02_u01l02",
+      "vlan_id": "0xf"
+    },
+    {
+      "id": "u01l03_l03^l03_s02-s02_l02^l02_u01l02",
+      "vlan_id": "0x10"
+    },
+    {
+      "id": "u01l03_l03^l03_s01-s01_l04^l04_u01l04",
+      "vlan_id": "0x11"
+    },
+    {
+      "id": "u01l03_l03^l03_s02-s02_l04^l04_u01l04",
+      "vlan_id": "0x12"
+    },
+    {
+      "id": "u01l03_l03^l03_s01-s01_l01^l01_u02l01",
+      "vlan_id": "0xd"
+    },
+    {
+      "id": "u01l03_l03^l03_s02-s02_l01^l01_u02l01",
+      "vlan_id": "0xe"
+    },
+    {
+      "id": "u01l03_l03^l03_s01-s01_l02^l02_u02l02",
+      "vlan_id": "0xf"
+    },
+    {
+      "id": "u01l03_l03^l03_s02-s02_l02^l02_u02l02",
+      "vlan_id": "0x10"
+    },
+    {
+      "id": "u01l03_l03^l03_s01-s01_l04^l04_u02l04",
+      "vlan_id": "0x11"
+    },
+    {
+      "id": "u01l03_l03^l03_s02-s02_l04^l04_u02l04",
+      "vlan_id": "0x12"
+    },
+    {
+      "id": "u02l03_l03^l03_s01-s01_l01^l01_u01l01",
+      "vlan_id": "0xd"
+    },
+    {
+      "id": "u02l03_l03^l03_s02-s02_l01^l01_u01l01",
+      "vlan_id": "0xe"
+    },
+    {
+      "id": "u02l03_l03^l03_s01-s01_l02^l02_u01l02",
+      "vlan_id": "0xf"
+    },
+    {
+      "id": "u02l03_l03^l03_s02-s02_l02^l02_u01l02",
+      "vlan_id": "0x10"
+    },
+    {
+      "id": "u02l03_l03^l03_s01-s01_l04^l04_u01l04",
+      "vlan_id": "0x11"
+    },
+    {
+      "id": "u02l03_l03^l03_s02-s02_l04^l04_u01l04",
+      "vlan_id": "0x12"
+    },
+    {
+      "id": "u02l03_l03^l03_s01-s01_l01^l01_u02l01",
+      "vlan_id": "0xd"
+    },
+    {
+      "id": "u02l03_l03^l03_s02-s02_l01^l01_u02l01",
+      "vlan_id": "0xe"
+    },
+    {
+      "id": "u02l03_l03^l03_s01-s01_l02^l02_u02l02",
+      "vlan_id": "0xf"
+    },
+    {
+      "id": "u02l03_l03^l03_s02-s02_l02^l02_u02l02",
+      "vlan_id": "0x10"
+    },
+    {
+      "id": "u02l03_l03^l03_s01-s01_l04^l04_u02l04",
+      "vlan_id": "0x11"
+    },
+    {
+      "id": "u02l03_l03^l03_s02-s02_l04^l04_u02l04",
+      "vlan_id": "0x12"
+    },
+    {
+      "id": "u01l04_l04^l04_s01-s01_l01^l01_u01l01",
+      "vlan_id": "0x13"
+    },
+    {
+      "id": "u01l04_l04^l04_s02-s02_l01^l01_u01l01",
+      "vlan_id": "0x14"
+    },
+    {
+      "id": "u01l04_l04^l04_s01-s01_l02^l02_u01l02",
+      "vlan_id": "0x15"
+    },
+    {
+      "id": "u01l04_l04^l04_s02-s02_l02^l02_u01l02",
+      "vlan_id": "0x16"
+    },
+    {
+      "id": "u01l04_l04^l04_s01-s01_l03^l03_u01l03",
+      "vlan_id": "0x17"
+    },
+    {
+      "id": "u01l04_l04^l04_s02-s02_l03^l03_u01l03",
+      "vlan_id": "0x18"
+    },
+    {
+      "id": "u01l04_l04^l04_s01-s01_l01^l01_u02l01",
+      "vlan_id": "0x13"
+    },
+    {
+      "id": "u01l04_l04^l04_s02-s02_l01^l01_u02l01",
+      "vlan_id": "0x14"
+    },
+    {
+      "id": "u01l04_l04^l04_s01-s01_l02^l02_u02l02",
+      "vlan_id": "0x15"
+    },
+    {
+      "id": "u01l04_l04^l04_s02-s02_l02^l02_u02l02",
+      "vlan_id": "0x16"
+    },
+    {
+      "id": "u01l04_l04^l04_s01-s01_l03^l03_u02l03",
+      "vlan_id": "0x17"
+    },
+    {
+      "id": "u01l04_l04^l04_s02-s02_l03^l03_u02l03",
+      "vlan_id": "0x18"
+    },
+    {
+      "id": "u02l04_l04^l04_s01-s01_l01^l01_u01l01",
+      "vlan_id": "0x13"
+    },
+    {
+      "id": "u02l04_l04^l04_s02-s02_l01^l01_u01l01",
+      "vlan_id": "0x14"
+    },
+    {
+      "id": "u02l04_l04^l04_s01-s01_l02^l02_u01l02",
+      "vlan_id": "0x15"
+    },
+    {
+      "id": "u02l04_l04^l04_s02-s02_l02^l02_u01l02",
+      "vlan_id": "0x16"
+    },
+    {
+      "id": "u02l04_l04^l04_s01-s01_l03^l03_u01l03",
+      "vlan_id": "0x17"
+    },
+    {
+      "id": "u02l04_l04^l04_s02-s02_l03^l03_u01l03",
+      "vlan_id": "0x18"
+    },
+    {
+      "id": "u02l04_l04^l04_s01-s01_l01^l01_u02l01",
+      "vlan_id": "0x13"
+    },
+    {
+      "id": "u02l04_l04^l04_s02-s02_l01^l01_u02l01",
+      "vlan_id": "0x14"
+    },
+    {
+      "id": "u02l04_l04^l04_s01-s01_l02^l02_u02l02",
+      "vlan_id": "0x15"
+    },
+    {
+      "id": "u02l04_l04^l04_s02-s02_l02^l02_u02l02",
+      "vlan_id": "0x16"
+    },
+    {
+      "id": "u02l04_l04^l04_s01-s01_l03^l03_u02l03",
+      "vlan_id": "0x17"
+    },
+    {
+      "id": "u02l04_l04^l04_s02-s02_l03^l03_u02l03",
+      "vlan_id": "0x18"
+    }
+  ]
+}
